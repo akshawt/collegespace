@@ -1,0 +1,232 @@
+{% load active_link_tags %}
+{% load static %}
+
+{% block head %}
+
+{% endblock  %}
+
+<nav class="navbar navbar-expand-lg navbar-light navxyz">
+    <a class="navbar-brand" href="#"><img src="{% static 'assets/img/hibi.png' %}" height="45px" width="80px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      
+      <ul class="navbar-nav mr-auto navbarss">
+         {% if user.user_type == '1' %}
+        <li class="{% active_link 'adminhome' 'active' %}">
+            <a class="nav-link" href="{% url 'adminhome' %}"><i class="fas fa-holly-berry"></i> <span>Dashboard</span></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-graduate"></i> <span> Students</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'addstudent' %}">Add Student</a>
+           
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'viewstudent' %}">View Student </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-chalkboard-teacher"></i> <span> Faculty</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="{% url 'addfaculty' %}">Faculty Add</a>
+               <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'viewfaculty' %}">Faculty View</a>
+             
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-graduation-cap"></i> <span> Course</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <a class="dropdown-item" href="{% url 'addcourse' %}">Add Course</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'viewcourse' %}">View Course</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-book-reader"></i> <span> Subject</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <a class="dropdown-item" href="{% url 'addsubject' %}">Add Subject</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'viewsubject' %}">View Subject</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-clock"></i> <span> Session</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+               <a class="dropdown-item" href="{% url 'addsession' %}">Add Session</a>
+               <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="{% url 'viewsession' %}">View Session </a>
+      
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-comment"></i> <span>More</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+              <a class="dropdown-item" href="{% url 'adminviewattendance' %}">View Attendance</a>
+              <a class="dropdown-item" href="{% url 'viewapplication' %}">Student Application</a>
+            </div>
+          </li>
+          {% elif user.user_type == '2' %}
+          <li class="{% active_link 'facultyhome' 'active' %}">
+            <a class="nav-link" href="{% url 'facultyhome' %}"><i class="fas fa-holly-berry"></i> <span>Dashboard</span></a>
+         </li>
+         <li class="">
+            <a class="nav-link" href="{% url 'takeattendance' %}"><i class="fas fa-calendar-alt"></i> <span>Take Attendance</span></a>
+         </li>
+         <li class="">
+            <a class="nav-link" href="{% url 'facultyviewattendance' %}"><i class="fas fa-calendar-check"></i> <span>View Attendance</span></a>
+         </li>
+         <li class="{% active_link  'active' %}">
+            <a class="nav-link" href="{% url 'addresult' %}"><i class="fas fa-poll"></i> <span>Add Result</span></a>
+         </li>
+         {% comment %} <li >
+            <a class="nav-link" href="{% url 'facultyhome' %}"><i class="fas fa-comments"></i> <span>Send Feedback</span></a>
+         </li> {% endcomment %}
+          {% else %}
+          <li class="{% active_link 'studenthome' 'active' %}">
+            <a class="nav-link" href="{% url 'studenthome' %}"><i class="fas fa-holly-berry"></i> <span>Dashboard</span></a>
+            </li>
+            <li class="{% active_link  'active' %}">
+               <a class="nav-link" href="{% url 'studentviewattendance' %}"><i class="fas fa-calendar-check"></i> <span>View Attendance</span></a>
+            </li>
+            <li class="{% active_link  'active' %}">
+               <a class="nav-link" href="{% url 'viewresult' %}"><i class="fas fa-poll"></i> <span>View Result</span></a>
+            </li>
+            <li class="">
+               <a class="nav-link" href="{% url 'sendapplication' %}"><i class="fas fa-laptop"></i> <span>Send Application</span></a>
+            </li>
+            {% comment %} <li class="">
+               <a class="nav-link" href="{% url 'facultyhome' %}"><i class="fas fa-bell-slash"></i> <span>Notifications</span></a>
+            </li>
+            <li class="">
+               <a class="nav-link" href="{% url 'facultyhome' %}"><i class="fas fa-feather"></i> <span>Send Feedback</span></a>
+            </li> {% endcomment %}
+          {% endif %}
+        </li>
+          {% comment %} <li class="nav-item dropdown btn-group dropleft">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+            <i class="far fa-bell"></i> <span class="badge badge-pill">3</span>
+            </a>
+            <div class="dropdown-menu notifications">
+               <div class="topnav-dropdown-header">
+                  <span class="notification-title">Notifications</span>
+                  <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+               </div>
+               <div class="noti-content">
+                  <ul class="notification-list">
+                     <li class="notification-message">
+                        <a href="#">
+                           <div class="media">
+                              <span class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" alt="User Image" src="">
+                              </span>
+                              <div class="media-body">
+                                 <p class="noti-details"><span class="noti-title">Carlson Tech</span> has approved <span class="noti-title">your estimate</span></p>
+                                 <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="notification-message">
+                        <a href="#">
+                           <div class="media">
+                              <span class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" alt="User Image" src="">
+                              </span>
+                              <div class="media-body">
+                                 <p class="noti-details"><span class="noti-title">International Software Inc</span> has sent you a invoice in the amount of <span class="noti-title">$218</span></p>
+                                 <p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="notification-message">
+                        <a href="#">
+                           <div class="media">
+                              <span class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" alt="User Image" src="">
+                              </span>
+                              <div class="media-body">
+                                 <p class="noti-details"><span class="noti-title">John Hendry</span> sent a cancellation request <span class="noti-title">Apple iPhone XR</span></p>
+                                 <p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                     <li class="notification-message">
+                        <a href="#">
+                           <div class="media">
+                              <span class="avatar avatar-sm">
+                              <img class="avatar-img rounded-circle" alt="User Image" src="">
+                              </span>
+                              <div class="media-body">
+                                 <p class="noti-details"><span class="noti-title">Mercury Software Inc</span> added a new product <span class="noti-title">Apple MacBook Pro</span></p>
+                                 <p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+                              </div>
+                           </div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="topnav-dropdown-footer">
+                  <a href="#">View all Notifications</a>
+               </div>
+            </div>
+         </li> {% endcomment %}
+         
+         <li>
+            <div class="btn-group dropleft">
+               <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                  {% if user.profile_pic == "" %}
+                  <span class="user-img"><img class="rounded-circle" src="{% static 'assets/img/noimg.jpg' %}" width="31" alt="{{user.first_name}} {{user.last_name}}"></span>
+                  {% else %}
+                  <span class="user-img"><img class="rounded-circle"  width="30" height="30" src="/{{user.profile_pic}}" width="31" alt="{{user.first_name}} {{user.last_name}}"></span>
+                  {% endif %}
+                  </a>
+                  <div class="dropdown-menu">
+                     <div class="user-header">
+                        <div class="avatar avatar-sm">
+                           {% if user.profile_pic == "" %}
+                           <img src="assets/img/noimg.jpg" alt="User Image" width="20" height="20" class="avatar-img rounded-circle">
+                           {% else %}
+                           <img src="/{{user.profile_pic}}" alt="User Image" width="20" height="20" class="avatar-img rounded-circle">
+                           {% endif %}
+                        </div>
+                        <div class="user-text">
+                           <h6>{{user.first_name}} {{user.last_name}}</h6>
+                           {% if user.user_type == '1' %}
+                             <p class="text-muted mb-0">Admin</p>
+                           {% elif user.user_type == '2' %}
+                             <p class="text-muted mb-0">Faculty</p>
+                           {% else %}
+                           <p class="text-muted mb-0">Student</p>
+                           {% endif %}
+                        </div>
+                     </div>
+                     <a class="dropdown-item" href="{% url 'profile' %}">My Profile Update</a>
+                     {% comment %} <a class="dropdown-item" href="inbox.html">Inbox</a> {% endcomment %}
+                     <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+                  </div>
+               </div>
+             </div>
+         </li>
+    </div>
+  </nav>

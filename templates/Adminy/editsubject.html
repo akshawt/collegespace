@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="content container-fluid">
+  
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card">
+        <div class="card-body">
+          <form action="{% url 'updatesubject' %}" method="post">
+              {% include 'includes/messages.html' %}
+              {% csrf_token %}
+              
+            <div class="row">
+              <div class="col-12">
+                <h5 class="form-title"><span>Edit Subject</span></h5>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="form-group">
+                  <label>Subject Name</label>
+                  <input type="text" class="form-control" name="subject_name" value="{{subject.name}}" required />
+                  <input type="text" class="form-control" name="subject_id" value="{{subject.id}}" hidden/>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                  <div class="form-group">
+                      <label>Course</label>
+                      <select class="form-control" name="course_id" required>
+                         <option>Select Course</option>
+                         {% for i in course %}
+                         <option value="{{i.id}}">{{i.name}}</option>
+                         {% endfor %}
+                      </select>
+                   </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="form-group">
+                      <label>Facult</label>
+                      <select class="form-control" name="faculty_id" required>
+                         <option>Select Faculty</option>
+                         {% for i in faculty %}
+                         <option value="{{i.id}}">{{i.admin.first_name}}&nbsp;{{i.admin.last_name}} </option>
+                         {% endfor %}
+                      </select>
+                   </div>
+                </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Update</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

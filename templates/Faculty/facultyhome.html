@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block head %}
+
+{% endblock  %}
+{% block content %}
+<div class="main-wrapper login-body">
+    <div class="wapu">
+       <div class="container">
+          <div class="wapu2">
+            <div class="wapu3">
+                
+            </div>
+            <div class="login-right">
+                <div class="login-right-wrap">
+                    <h3><strong>Welcome !</h3>
+                        <br>
+                        <br>
+                    <h6>First Name : {{user.first_name}}</h6>
+                    <br>
+                      <span class="or-line"></span>
+                    <br>
+                    <h6>Last Name : {{user.last_name}}</h6>
+                    <br>
+                    <span class="or-line"></span>
+                  <br>
+                  <h6>Email Address : {{user.email}}</h6>
+                    <br>
+                    <span class="or-line"></span>
+                  <br>
+                <h6>Username : {{user.username}}</h6>
+                    <br>
+                    <span class="or-line"></span>
+                  <br>
+                <h6>User Type : {% if user.user_type == '1' %}<p class="text-muted mb-0">Admin<p>{% elif user.user_type == '2' %}<p class="text-muted mb-0">Faculty</p>{% else %}<p class="text-muted mb-0">Student</p>{% endif %}</h6>
+                <span class="or-line"></span>
+{% endblock  %}

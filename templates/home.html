@@ -1,0 +1,130 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>College Space | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'assets/css/home.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+    <script src="https://kit.fontawesome.com/1061481de8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="{% static 'images/rediips.png' %}" type="image/x-icon">
+  </head> 
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navsy">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"> <img src="{% static 'assets/img/hibi.png' %}" alt="IIPS" class="logoImg" >
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 listip">
+              
+              
+              <li class="nav-item ">
+                <a class="nav-link" href="#">
+                  
+                </a>
+                
+              </li>
+              <li class="nav-item loginadmin">
+                <a class="nav-link" href="{% url 'login' %}"><i class="fa fa-user" aria-hidden="true"></i> Admin Login</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <div class="center">
+        <div class="cspace"><span class="change-content"></span></div>
+        <div class="subtitle">Welcome to the IIPS website.</div>
+        <div class="buttonsy">
+            
+            <a href="{% url 'login' %}" class="btn btn-green-gradient my-2">Student</a>
+            <a href="{% url 'login' %}" class="btn btn-green-gradient my-2 facul">Faculty</a>
+        </div>
+    </div>
+    <div class="dtitle">
+        <div class="greentitle">Message </div>
+        <div class="blacktitle">from Director</div>
+    </div>
+    <div class="wrapper">
+      <div class="wrapper2">
+        <div class="drop"><div class="content"> "Welcome to International Institute of Professional Studies- a Premier B-School in Central India which has been providing exceptional opportunities to the students since past 27 years. There has been an indelible mark that will guide subsequent developments, not only at the institution, but hopefully also in management and computer science education in our country. The new age of consumers, industry and trade have always guided the plan and programmes of the institute."
+        </div>
+        </div>
+        <div class="drop"><div class="content">Our innovative academic programmes incorporate a tradition of academic excellence and experimental learning with an emphasis on leadership and team-work.  We imbibe capabilities of working in diversified fields with creativity, imagination and perseverance in students. We actively explore and develop new methodologies such as alternative teaching techniques and learning approaches that promote thinking skills and lifelong learning habits. </div> </div>
+        <div class="drop"><div class="content">My belief is that organization’s today need to focus on new socially sensitive managers.We also believe that a whole lot of exercises and cases that these students go through at the institute, will help them develop a set of values facilitating them to manage diverse environmental changes and business organizations in an ethical manner. We at IIPS inculcate the qualities of ethical leadership and management in our students in management and computer science arena.</div> </div>
+        
+      </div>
+    </div>
+
+    <div class="aboutpage">
+      xx
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,192L80,208C160,224,320,256,480,229.3C640,203,800,117,960,112C1120,107,1280,181,1360,218.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <footer class="footer  mt-auto pb-3">
+         <div class="container pb-5"> 
+            <div class="row">
+                 <div class="col-12 col-md">
+                     <img src="{% static 'assets/img/hibi.png' %}" class="logoIMG2"  alt="IIPS" title="Free Video Templates"> 
+                     <small class="d-block mb-3 text-muted">©2023</small> 
+                    </div>
+                    <div class="col-6 col-md">
+                        <p class="title fs-18">IIPS</p> 
+                        <ul class="list-unstyled"> 
+                             
+                        </ul>
+                    </div>
+                    <div class="col-6 col-md">
+                        <p class="title fs-18">Admin</p> 
+                        <ul class="list-unstyled"> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Add Faculty</a></li>  
+                            <li><a class="text-muted" href="{% url 'login' %}">Add Student</a></li>
+                            <li><a class="text-muted" href="{% url 'login' %}">Add Subject</a></li>
+                            <li><a class="text-muted" href="{% url 'login' %}">Add Admin</a></li>
+                            <li><a class="text-muted" href="{% url 'login' %}">Our Faculties</a></li>
+                            <li><a class="text-muted" href="{% url 'login' %}">Our Students</a></li>
+                            <li><a class="text-muted" href="{% url 'login' %}">Subjects</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-6 col-md"> 
+                        <p class="title fs-18">Faculty</p>
+                        <ul class="list-unstyled">
+                            <li><a class="text-muted" href="{% url 'login' %}">Update Profile</a></li> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Mark Attendance</a></li> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Upload Marks</a></li> 
+                            
+                        </ul>
+                    </div> 
+                    <div class="col-6 col-md"> 
+                        <p class="title fs-18">Student</p>
+                        <ul class="list-unstyled"> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Update Profile</a></li> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Test Performance</a></li> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Attendance</a></li> 
+                            <li><a class="text-muted" href="{% url 'login' %}">Subject List</a></li> 
+                             
+                            <li><a class="text-muted" href="{% url 'login' %}">Send Application</a></li> 
+
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </footer>
+        <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+        <script src="{% static 'assets/js/popper.min.js' %}"></script>
+        <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'assets/js/home.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>

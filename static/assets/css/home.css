@@ -1,0 +1,395 @@
+
+.navsy {
+    background-color: #ffffff;
+    background-position: 0% 0%;
+    color: #212529;
+  font-size: 14px;
+  font-weight: 700;
+    height: 87.2188px;
+    width: 1349px;
+    padding: 8px 16px 8px 16px;
+  
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    z-index: 999;
+  
+    
+  }
+  
+  .listip{
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 22.4px
+  }
+  .navbar-brand{
+      height: 71.2188px;
+  width: 107.812px;
+  padding: 8px 16px 8px 0;
+  
+  /* min-width: auto; */
+  
+  /* position: relative; */
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  word-spacing: 0px;
+  line-height: 23.04px;
+  }
+  .logoImg{
+      /* font-size: 18px; */
+  /* line-height: 28.8px; */
+  text-decoration: none solid rgb(0, 101, 36);
+  /* text-align: left; */
+  background-color:  #FFFFFF;
+  background-position: 0% 0%;
+  color:  #006524;
+   
+  height: 65px;
+  width: 110px;
+  top:0px;
+  
+  margin: 10px;
+  display: flex;
+  line-height: 22px;
+  
+  cursor: pointer;
+  }
+  .loginadmin{
+      height: 54.3906px;
+  width: 145.9219px;
+  padding: 8px 12px 8px 12px;
+  align-items: center;
+  justify-content: center;
+  min-width: auto;
+  
+  display: list-item;
+  
+  list-style-type: none;
+  list-style-position: outside;
+  line-height: 22.4px;
+  cursor: pointer;
+  }
+  .dropsyy{
+      background-color:  #FFFFFF;
+  background-position: 0% 0%;
+  color:  #212529;
+  border-radius: 4px;
+  height: 132.75px;
+  width: 185px;
+  margin: -4px 0 0 0;
+  padding: 8px 8px 8px 8px;
+  
+  
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+  top: 54.3906px;
+  bottom: -538.75px;
+  right: -42.906px;
+  left: 0px;
+  
+  z-index: 1000;
+  font-size: 14.4px;
+  font-weight: 700;
+  line-height: 23.04px;
+  border :none;
+  }
+  .dropfoo{
+      background-color:  #F8F9FA;
+  background-position: 0% 0%;
+  color:  #202020;
+  
+  height: 40.0938px;
+  width: 170px;
+  padding: 10px 10px 10px 10px;
+  
+  }
+  .center{
+      text-align: center;
+  word-spacing: 0px;
+  
+  background-color:  #FFFFFF;
+  background-position: 0% 0%;
+  color:  #212529;
+  
+  height: 312.234px;
+  width: 1349px;
+  padding: 70px 15px 70px 15px;
+  max-width: 1450px;
+  
+  display: block;
+  }
+  .cspace{
+      font-size: 67.2px;
+  font-weight: 740;
+  letter-spacing: -3.024px;
+  line-height: 60.48px;
+  text-decoration: none solid rgb(33, 37, 41);
+  text-align: center;
+  text-indent: -2.016px;
+  word-spacing: 0px;
+  
+  background-color:  #FFFFFF;
+  background-position: 0% 0%;
+  color:  #212529;
+  
+  height: 60.4688px;
+  width: 1319px;
+  margin: 0 0 16px 0;
+  
+  display: block;
+  }
+  .subtitle{
+      font-family: Inter, sans-serif;
+      font-size: 20.8px;
+      letter-spacing: -0.936px;
+      line-height: 18.72px;
+      text-decoration: none solid rgba(33, 37, 41, 0.7);
+      text-align: center;
+      text-indent: -0.624px;
+      word-spacing: 0px;
+   
+      background-color:  #FFFFFF;
+      background-position: 0% 0%;
+      color:  rgba(33, 37, 41, 0.747);
+     
+      height: 18.7188px;
+      width: 1319px;
+      margin: 0 0 16px 0;
+     
+      display: block;
+  }
+  .btn{
+      font-family: Inter, sans-serif;
+  font-size: 14.4px;
+  font-weight: 500;
+  line-height: 23.04px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  vertical-align: middle;
+  word-spacing: 0px;
+  
+  background-color:  #00b140;
+  background-position: 0% 0%;
+  color:  #FFFFFF;
+  transition: color 0.15s ease-in-out 0s, background-color  0.15s ease-in-out  0s #F8F9FA, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  height: 45.0469px;
+  width: 144.312px;
+  border: 1px solid  #F8F9FA;
+  margin: 8px 0 8px 0;
+  padding: 10px 24px 10px 24px;
+  
+  display: inline-block;
+  border-radius: 2px;
+  cursor: pointer;
+  }
+  .facul{
+      background-color: #E4E4E4;
+      color:#212529;
+  }
+  .dtitle{
+      font-size: 25.2px;
+  font-weight: 740;
+  letter-spacing: -1.134px;
+  line-height: 22.68px;
+  text-decoration: none solid rgb(33, 37, 41);
+  text-align: left;
+  text-indent: -0.756px;
+  word-spacing: 0px;
+  
+  background-color:  #FFFFFF;
+  background-position: 0% 0%;
+  color:  #212529;
+  
+  height: 70.6719px;
+  width: 1319px;
+  margin: 0 0 8px 0;
+  padding: 24px 0 24px 0;
+  
+  display: flex;
+  }
+  .greentitle{
+      font-size: 25.2px;
+  font-weight: 740;
+  letter-spacing: -1.134px;
+  line-height: 22.68px;
+  text-decoration: none solid rgb(0, 177, 64);
+  text-align: left;
+  text-indent: -0.756px;
+  word-spacing: 0px;
+  
+  background-color:  #FFFFFF;
+  background-position: 0% 0%;
+  color:  #00B140;
+  
+  height: auto;
+  width: auto;
+  margin: 10px;
+  display: inline;
+  }
+  .blacktitle{
+      margin:   10px 10px 10px 0px;
+  }
+  .change-content:after{
+      content:'';
+      animation:changetext 5s infinite linear ;
+  }
+  @keyframes changetext {
+      0%{content:'College Space';}
+      /* 25%{content:'IIPS Resource Management Portal';}
+      50%{content:'College Space';} */
+      100%{content:'IIPS Student Management Portal';}
+  }
+  
+  
+  .footer{
+      background-color: #f3f4f5;
+  }
+  .logoIMG2{
+      height: 45px;
+      width: 80px;
+  }
+  .col-12 {
+      height: 347.797px;
+  width: 269.797px;
+  padding: 0 15px 0 15px;
+  
+  max-width: 100%;
+  min-width: auto;
+  
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: block;
+  }
+  .col-6{
+      font-family: Inter, sans-serif;
+  font-size: 14.4px;
+  line-height: 23.04px;
+  text-decoration: none solid rgb(33, 37, 41);
+  text-align: left;
+  word-spacing: 0px;
+  
+  
+  
+  color:  #212529;
+  
+  height: 247.797px;
+  width: 269.797px;
+  padding: 0 15px 0 15px;
+  
+  max-width: 100%;
+  min-width: auto;
+  
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: block;
+  }
+  .fs-18{
+      font-size: 18px;
+  font-weight: 740;
+  cursor: pointer;
+  }
+  .text-muted{
+      display: list-item;
+  
+  list-style-type: none;
+  list-style-position: outside;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  .nav-link:hover{
+      font-size: 20px;
+      color:#00B140;
+  }
+  .wrapper{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #fff;
+  }
+  .wrapper2{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 50px 0;
+      gap: 40px 60px;
+      
+  } 
+  .wrapper2 .drop{
+      font-size: 12px;
+      position: relative;
+      width: 350px;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background: #333; */
+      box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),25px 35px 20px rgba(0, 0, 0, 0.05),25px 30px 30px rgba(0, 0, 0, 0.05),inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+      transition: 0.5s ease-in-out;
+  }
+  .wrapper2 .drop:nth-child(2){
+      border-radius: 57% 43% 43% 57%/43% 43% 57% 57%;
+  }
+  .wrapper2 .drop:nth-child(1){
+      border-radius: 61% 39% 52% 48%/44% 59% 41% 56%;
+  }
+  .wrapper2 .drop:nth-child(3){
+      border-radius: 35% 65% 31% 69%/57% 59% 41% 43%;
+  }
+  .wrapper2 .drop:hover{
+      border-radius: 50%;
+  
+  }
+  .wrapper2 .drop::before{
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: 50%;
+      top: 50px;
+      left:85px;
+      opacity: 0.9;
+  }
+  .wrapper2 .drop::after{
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: rgba(0, 0, 0, 0.03);
+      border-radius: 50%;
+      top: 90px;
+      left:110px;
+      opacity: 0.9;
+  }
+  .wrapper2 .drop .content{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+      gap: 15px;
+  }
+
+  
